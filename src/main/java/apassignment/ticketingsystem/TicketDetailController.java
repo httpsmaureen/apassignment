@@ -96,6 +96,7 @@ public class TicketDetailController implements Initializable {
         backButton.setMinWidth(50);
         HBox.setHgrow(backButton, Priority.NEVER);
 
+        //to go back to ticket row view
         backButton.setOnAction(event -> {
             parentController.loadView("/apassignment/fxml/ticketingsystem/Ticket.fxml");
         });
@@ -321,9 +322,8 @@ public class TicketDetailController implements Initializable {
             addResponseButton.setVisible(false);
             addResponseButton.setManaged(false);
         }
-        //so agents can reply to customers or newly submitted tickets after claim
+        //so agents can reply to tickets that are assigend to them
         if (currentLoggedUserID.equals(agent)) {
-            if ((lastUser.startsWith("CUST") || lastUser.equals(""))) {
                 if ((!ticketStatus.equals("Closed")) && (currentLoggedUserID.startsWith("AGT")) && ((ticketCloseButton != null))) {
                     addResponseButton.setVisible(true);
                     addResponseButton.setManaged(true);
@@ -331,7 +331,6 @@ public class TicketDetailController implements Initializable {
                     addResponseButton.setVisible(false);
                     addResponseButton.setManaged(false);
                 }
-            }
         }
     }
 

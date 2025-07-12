@@ -11,4 +11,4 @@ TCK010 | Ticket 23 | Open | description very nice | Medium | AGT004 | CUST007 | 
 TCK011 | new ticket test | Closed | test test | Unset | Unassigned | CUST007 | 07/07/2025
 TCK012 | ui error | Open | dumb programmer cant do s | Unset | AGT004 | CUST007 | 10/07/2025
 TCK013 | uidawda | Open | dwdadawdawd | Medium | AGT006 | CUST007 | 10/07/2025
-TCK014 | di | Open | dwas | Unset | AGT003 | CUST007 | 10/07/2025
+TCK014 | di | Open | dwas | Medium | AGT003 | CUST007 | 10/07/2025
